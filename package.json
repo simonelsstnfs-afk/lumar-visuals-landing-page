@@ -1,0 +1,28 @@
+{
+  "name": "lumar-visuals-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "server": "node server/index.js",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "test:api": "node server/test-submit.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "gsap": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "nodemailer": "latest",
+    "concurrently": "latest"
+  },
+  "devDependencies": {}
+}
