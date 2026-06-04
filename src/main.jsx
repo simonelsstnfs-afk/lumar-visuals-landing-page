@@ -66,8 +66,8 @@ function BrandMark({ dark = false }) {
 function useScrollMotion() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo('.hero-word', { y: 90, opacity: 0 }, { y: 0, opacity: 1, duration: 1.15, stagger: 0.08, ease: 'power4.out' });
-      gsap.fromTo('.float-card', { y: 70, rotate: -2, opacity: 0 }, { y: 0, rotate: 0, opacity: 1, duration: 1.1, stagger: 0.14, ease: 'power3.out', delay: 0.35 });
+      gsap.fromTo('.hero-word', { y: '105%', opacity: 0 }, { y: '0%', opacity: 1, duration: 1.25, stagger: 0.1, ease: 'power4.out' });
+      gsap.fromTo('.float-card', { y: 60, rotate: -2, opacity: 0 }, { y: 0, rotate: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: 'power3.out', delay: 0.45 });
 
       gsap.utils.toArray('.scale-in').forEach((el) => {
         gsap.fromTo(el, { scale: 0.82, opacity: 0.45 }, {
@@ -237,8 +237,8 @@ function App() {
         <div className="hero-content">
           <p className="kicker">Foto, video y contenido visual en Tenerife</p>
           <h1>
-            <span className="hero-word">Luz, color</span>
-            <span className="hero-word">y cero poses aburridas.</span>
+            <span className="hero-word-wrap"><span className="hero-word">Luz, color</span></span>
+            <span className="hero-word-wrap"><span className="hero-word">y cero poses aburridas.</span></span>
           </h1>
           <p className="hero-copy">Creamos contenido para marcas, productos, eventos y personas que necesitan verse bien antes de pedir precio.</p>
           <div className="hero-actions">
